@@ -59,7 +59,7 @@ VOLUME /data
 # For rclone cache and aria2 DHT files
 VOLUME /app/.cache
 
-EXPOSE 80 443 6881
+EXPOSE 80 443 6881 6800
 
 HEALTHCHECK --interval=30s --timeout=3s \
   CMD curl -f http://localhost/ping || exit 1
